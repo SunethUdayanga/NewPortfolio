@@ -45,7 +45,7 @@ const HeroContent = () => {
                         variants={slideInFromLeft(0.8)}
                         className="text-lg text-gray-400 my-5 max-w-[600px]"
                     >
-                        Undergraduate Fullstack Developer | Crafting seamless digital experiences | Proficient in Frontend Development | Eager to contribute and learn in the tech world. Let's innovate together...!
+                        Undergraduate Fullstack Developer | Crafting seamless digital experiences | Proficient in Frontend Development | Eager to contribute and learn in the tech world. Let&apos;s innovate together...!
                         {/* I&apos;m a Full Stack Software Engineer with experience in Website,
                   Mobile, and Software development. Check out my projects and skills. */}
                     </motion.p>
