@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroContent from '../sub/HeroContent';
-import HeroCExtra from '../sub/HeroCExtra';
+
 
 
 
@@ -11,6 +11,7 @@ function Hero() {
 
       <div className="w-full">
       <HeroContent />
+      
 
         {/* <div className="section-hero flex flex-row flex-wrap lg:flex-nowrap m-6">
           <div className="name-text basis-2/3">
