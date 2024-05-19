@@ -7,7 +7,7 @@ import {
     slideInFromTop,
 } from "@/utils/motion";
 import Image from "next/image";
-import AnimatedText from '../main/AnimatedText';
+import AnimatedText from './AnimatedText';
 
 const HeroContent = () => {
     return (

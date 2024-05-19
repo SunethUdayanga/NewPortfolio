@@ -50,19 +50,19 @@ const NavbarContent = () => {
         >
             <motion.div
                 variants={slideInFromTop}
-                className="Navbar sticky mx-8 my-4 px-8 py-2 bg-gray-800 rounded-3xl"
+                className="Navbar sticky mx-2 my-4 px-8 py-2 bg-gray-800 rounded-3xl"
             >
                 <nav className='bg-gray-800'>
-                    <div className='container flex flex-row justify-between'>
-                        <div className='logo-side'>
-                            <span className="Welcome-text text-2xl font-bold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
+                    <div className='flex flex-row justify-between'>
+                        <div className='logo-side items-center'>
+                            <Link rel="stylesheet" href="/" ><span className="Welcome-text text-2xl font-bold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
                                 {" "}SUNETH UDAYANGA{" "}
-                            </span>
+                            </span></Link>
                         </div>
                         {/* <div className='link-side hidden md:flex items-center'> */}
                         <div className={getMenuClasses()}>
                             <Link href='/about' className='text-lg text-gray-400 mx-4 hover:text-gray-200'>About</Link>
-                            <Link href='/about' className='text-lg text-gray-400 mx-4 hover:text-gray-200'>Skills</Link>
+                            <Link href='#skills' className='text-lg text-gray-400 mx-4 hover:text-gray-200'>Skills</Link>
                             <Link href='/about' className='text-lg text-gray-400 mx-4 hover:text-gray-200'>My Projects</Link>
                             <Link href='/about' className='text-lg text-gray-400 mx-4 hover:text-gray-200'>Contact</Link>
 

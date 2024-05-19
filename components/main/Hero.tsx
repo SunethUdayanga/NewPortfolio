@@ -9,7 +9,7 @@ function Hero() {
   return (
     <>
 
-      <div className="w-full">
+      <div className="w-full mt-20 px-6">
       <HeroContent />
       
 
