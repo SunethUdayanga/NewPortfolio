@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
+import Image from 'next/image';
 
 interface Props {
     src: string;
@@ -22,8 +23,6 @@ const SkillData = ({ src, width, height, index } : Props) => {
     }
 
     const animationDelay = 0.3
-
-
     return (
         <motion.div
         ref={ref}
@@ -33,16 +32,14 @@ const SkillData = ({ src, width, height, index } : Props) => {
         custom={index}
         transition={{delay: index * animationDelay}} 
         >
-            {/* <Image 
+            <Image 
             src={src}
             width={width}
             height={height}
-            alt='skill images' /> */}
+            alt='skill images' />
 
         </motion.div>
     )
 }
-
-
 
 export default SkillData;
