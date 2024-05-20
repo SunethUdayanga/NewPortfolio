@@ -15,6 +15,8 @@ const config: Config = {
       },
       animation: {
         'spin-slow': 'spin 40s linear infinite',
+        shimmer: "shimmer 2s linear infinite",
+        
       },
       height: {
         '128': '32rem',
@@ -26,9 +28,21 @@ const config: Config = {
         '4xl': '2.441rem',
         '5xl': '3.052rem',
       },
+      keyframes: {
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
+      },
 
     },
   },
   plugins: [],
 };
 export default config;
+
+

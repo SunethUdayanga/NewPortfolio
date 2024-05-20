@@ -8,6 +8,12 @@ import {
 } from "@/utils/motion";
 import Image from "next/image";
 import AnimatedText from './AnimatedText';
+import Link from 'next/link';
+
+const DownloadResume = () => {
+
+}
+
 
 const HeroContent = () => {
     return (
@@ -54,16 +60,17 @@ const HeroContent = () => {
                     </motion.p>
                     <motion.a
                         variants={slideInFromLeft(1)}
-                        className="my-5 text-gray-500 max-w-[400px]"
+                        className="inline-flex sm:w-full m-6 md:w-1/3 h-12 animate-shimmer items-center justify-center rounded-3xl shadow-md shadow-cyan-500/50 border border-slate-500 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+                        href={'/assets/resume/Resume.pdf'}
                     >
-                        Crafting Code, Shaping Futures
+                        Download Resume
                     </motion.a>
                 </div>
-                <div className='my-img-box w-full lg:basis-1/3 relative flex justify-center items-center transition transform translate-x-100'>
+                <div className='my-img-box w-full m-2 lg:basis-1/3 relative flex justify-center items-center transition transform translate-x-100'>
 
                     <motion.div
                         variants={slideInFromRight(0.8)}
-                        className="w-full h-full flex justify-center items-center"
+                        className="w-full h-full m-2 flex justify-center items-center"
                     >
                         <Image className='img-myprof rounded-full absolute shadow-lg shadow-cyan-900' width={400} height={400} src='/prof.png' alt='image not supported' />
                         <Image className='img-myprof-svg overflow-hidden -z-10 animate-spin-slow' width={400} height={400} src="/ccchaos.svg" alt="Image not supported" />
