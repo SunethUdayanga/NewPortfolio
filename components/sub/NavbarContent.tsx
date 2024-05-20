@@ -50,7 +50,7 @@ const NavbarContent = () => {
         >
             <motion.div
                 variants={slideInFromTop}
-                className="Navbar sticky mx-2 my-4 px-8 py-2 bg-gray-800 rounded-3xl"
+                className="Navbar sticky mx-2 my-4 px-8 py-2 bg-gray-800 rounded-3xl ring-1 ring-blue-500 ring-offset-2 ring-offset-slate-900"
             >
                 <nav className='bg-gray-800'>
                     <div className='flex flex-row justify-between'>
