@@ -46,7 +46,7 @@ const NavbarContent = () => {
         <motion.div
             initial="hidden"
             animate="visible"
-            className=""
+            className="px-4 md:px-10"
         >
             <motion.div
                 variants={slideInFromTop}
