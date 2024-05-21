@@ -45,7 +45,7 @@ export default function AnimatedText({ text, classname }: AnimatedTextProps) {
 
     // Returning a cleanup function to stop the animation when the component is unmounted.
     return controls.stop;
-  }, []); // Empty dependency array means this useEffect will only run once, similar to `componentDidMount`.
+  }, [count, text.length]); // Empty dependency array means this useEffect will only run once, similar to `componentDidMount`.
 
   return (
     /**
