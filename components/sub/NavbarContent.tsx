@@ -63,7 +63,7 @@ const NavbarContent = () => {
                         <div className={getMenuClasses()}>
                             <Link href='/about' className='text-lg text-gray-400 mx-4 hover:text-gray-200'>About</Link>
                             <Link href='#skills' className='text-lg text-gray-400 mx-4 hover:text-gray-200'>Skills</Link>
-                            <Link href='/about' className='text-lg text-gray-400 mx-4 hover:text-gray-200'>My Projects</Link>
+                            <Link href='#projects' className='text-lg text-gray-400 mx-4 hover:text-gray-200'>My Projects</Link>
                             <Link href='/about' className='text-lg text-gray-400 mx-4 hover:text-gray-200'>Contact</Link>
 
                         </div>

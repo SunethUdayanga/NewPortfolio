@@ -154,3 +154,36 @@ export const Skill_data = [
     }
   ];
   
+  export const projects = [
+    {
+      id: '1',
+      imageUrl:'/assets/project/portfolio.png',
+      width:300,
+      height:200,
+      title: 'Portfolio',
+      subtitle: 'NextJs + Framer Motion + ThreeJs',
+      year:2020,
+      description:
+        'Visually compelling portfolio website built with Next.js 14. Framer Motion for dynamic animations, Three.js and Tailwind CSS for rapid UI development. Showcases downloadable resume, project exploration, contact information, skills, and a detailed about me. Deployed on Netlify for global accessibility.',
+    },
+    {
+      id: '2',
+      imageUrl:'/assets/project/classbuddy.png',
+      width:300,
+      height:200,
+      title: 'Class Buddy LMS App',
+      subtitle: 'Flutter + Firebase + Genarative AI',
+      year:2020,
+      description: 'Class Buddy is a Learning Management System (LMS) application designed to streamline the educational experience for students and instructors. With features like Google sign-in, automatic registration, and academic year selection, it offers a seamless onboarding process for users.',
+    },
+    {
+      id: '3',
+      imageUrl:'/assets/project/playtube.jpg',
+      width:300,
+      height:200,
+      title: 'PlayTube App',
+      subtitle: 'Android Application',
+      year:2020,
+      description: 'PlayTube is an Android application designed to allow users to watch YouTube videos on unsupported devices, particularly older Android devices that may not be able to run the official YouTube app.',
+    },
+  ];
