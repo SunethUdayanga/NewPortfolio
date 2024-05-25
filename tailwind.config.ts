@@ -13,11 +13,15 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      backdropBlur: {
+        xs: '2px',
+      },
       animation: {
         'spin-slow': 'spin 40s linear infinite',
         shimmer: "shimmer 2s linear infinite",
         
       },
+
       height: {
         '128': '32rem',
       },

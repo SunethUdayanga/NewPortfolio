@@ -1,3 +1,5 @@
+import { text } from "stream/consumers";
+
 export const Frontend_skill = [
   {
     skill_name: "Html 5",
@@ -186,4 +188,63 @@ export const Skill_data = [
       year:2020,
       description: 'PlayTube is an Android application designed to allow users to watch YouTube videos on unsupported devices, particularly older Android devices that may not be able to run the official YouTube app.',
     },
+  ];
+
+  export const Contact_icons = [
+    {
+      icon_name: "Mobile",
+      Image: "/assets/icons/whatsapp.png",
+      width: 32,
+      height: 32,
+      text:'https://wa.me/+94719171734',
+      dtext:'0719171734 / 0787016475'
+    },
+    {
+      icon_name: "Email",
+      Image: "/assets/icons/email.png",
+      width: 32,
+      height: 32,
+      text:'mailto:sunethuw@gmail.com',
+      dtext:'sunethuw@gmail.com'
+    },
+    {
+      icon_name: "Linkedin",
+      Image: "/assets/icons/linkedin.png",
+      width: 32,
+      height: 32,
+      text:'https://www.linkedin.com/in/sunethudayanga/',
+      dtext:'linkedin.com/in/sunethudayanga'
+    },
+    {
+      icon_name: "Github",
+      Image: "/assets/icons/github.png",
+      width: 32,
+      height: 32,
+      text:'https://github.com/SunethUdayanga',
+      dtext:'github.com/SunethUdayanga'
+    },
+    {
+      icon_name: "Blog",
+      Image: "/assets/icons/blogger.png",
+      width: 32,
+      height: 32,
+      text:'https://ntechks.blogspot.com/',
+      dtext:'ntechks.blogspot.com'
+    },
+    {
+      icon_name: "Medium",
+      Image: "/assets/icons/medium4.png",
+      width: 32,
+      height: 32,
+      text:'https://medium.com/@sunethuw',
+      dtext:'medium.com/@sunethuw'
+    },
+    {
+      icon_name: "Post",
+      Image: "/assets/icons/pin2.png",
+      width: 32,
+      height: 32,
+      text:'https://maps.app.goo.gl/u67VDQxZRsPFwgfb9',
+      dtext:'A/66, Thambugala, Weweldeniya'
+    }
   ];
