@@ -6,18 +6,6 @@ import Image from 'next/image';
 import { projects } from '@/constants';
 
 
-interface PCProps {
-    id: string;
-    src: string;
-    title: string;
-    subtitle: string;
-    description: string;
-    index: number;
-    width: number;
-    height: number;
-}
-
-
 const ProjectContent = () => {
     const [selectedId, setSelectedId] = useState('');
     return (
@@ -54,7 +42,7 @@ const ProjectContent = () => {
             <AnimatePresence>
                 {selectedId && (
                     <motion.div
-                        className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 pt-[60px]"
+                        className="fixed inset-2 rounded-2xl bg-gray-500 bg-opacity-80 flex items-center justify-center p-4 pt-[60px]"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.4 }}

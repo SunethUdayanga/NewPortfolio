@@ -7,7 +7,7 @@ export default function Skills() {
   return (
     <div>
 
-      <section id='skills' className='flex flex-col bg-gray-900 rounded-3xl items-center justify-center gap-5 h-full relative overflow-hidden py-20 px-4' style={{ transform: 'scale(0.9)' }}>
+      <section id='skills' className='flex flex-col backdrop-blur-xs ring-1 rounded-3xl items-center justify-center gap-5 h-full relative overflow-hidden py-20 px-4' style={{ transform: 'scale(0.9)' }}>
         <div>
           <SkillText />
         </div>

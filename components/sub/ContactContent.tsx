@@ -48,7 +48,7 @@ const ContactContent = ({ src, width, height, text, name, dtext, index }: contac
                         alt={''}
                     />
                 </div>
-                <div className='flex'><p className='text-gray-400'> <Link href={text} target='_blank'>{name} : {dtext}</Link></p></div>
+                <div className='flex'><p className='text-gray-200'> <Link href={text} target='_blank'>{name} : {dtext}</Link></p></div>
                 <div className='flex'>
                     <button type="button" onClick={() => {navigator.clipboard.writeText(text)}}><ClipboardIcon className='h-4 w-4 text-gray-900' /></button>
                 </div>

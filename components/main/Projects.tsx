@@ -9,8 +9,8 @@ import ProjectText from '../sub/ProjectText';
 
 export default function Projects() {
   return (
-    <section id='projects' className='w-full py-4 px-4'>
-        <div className='py-[30px]'>
+    <section id='projects' className='w-full py-4'>
+        <div className='py-[30px] backdrop-blur-xs rounded-3xl ring-1' style={{ transform: 'scale(0.9)' }}>
         <ProjectText />
         <ProjectContent />
         </div>
