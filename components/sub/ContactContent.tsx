@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useInView } from 'react-intersection-observer';
-import { ClipboardIcon } from '@heroicons/react/24/solid';
+import { ClipboardDocumentListIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
 
 interface contactProps {
@@ -40,7 +40,7 @@ const ContactContent = ({ src, width, height, text, name, dtext, index }: contac
             className='w-full md:w-auto'
         >
             <div className='card flex flex-row w-full h-12 justify-center items-center rounded-xl p-4 gap-2 bg-gradient-to-r from-indigo-900 to-sky-900'>
-                <div className='flex'>
+                <div className='flex bg-white rounded-full'>
                     <Image
                         src={src}
                         width={width/1.5}
@@ -50,7 +50,7 @@ const ContactContent = ({ src, width, height, text, name, dtext, index }: contac
                 </div>
                 <div className='flex'><p className='text-gray-200'> <Link href={text} target='_blank'>{name} : {dtext}</Link></p></div>
                 <div className='flex'>
-                    <button type="button" onClick={() => {navigator.clipboard.writeText(text)}}><ClipboardIcon className='h-4 w-4 text-gray-900' /></button>
+                    <button type="button" onClick={() => {navigator.clipboard.writeText(text)}}><ClipboardDocumentListIcon className='h-5 w-5 text-gray-100' /></button>
                 </div>
             </div>
 
