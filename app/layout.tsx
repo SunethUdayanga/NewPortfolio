@@ -8,7 +8,7 @@ import { openGraphImage } from "./shared-metadata";
 
 
 export const metadata: Metadata = {
-  title: "Suneth Udayanga",
+  title: "Portfolio | Suneth Udayanga",
   description: "Your are visiting My Portfolio",
   openGraph: {
     title: 'Suneth Udayanga',
