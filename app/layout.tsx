@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   openGraph: {
     ...openGraphImage,
     title: 'Suneth Udayanga',
+    images:['../public/meta.png']
+    
+  
   },
 
   
