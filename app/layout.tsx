@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Exo_2 } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/main/Navbar";
 import StarEffect from "@/components/sub/StarEffect";
+import Footer from "@/components/main/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <Navbar />
       <StarEffect />
         {children}
+        <Footer />
       </body>
     </html>
   );
