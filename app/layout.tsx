@@ -4,14 +4,19 @@ import "./globals.css";
 import Navbar from "@/components/main/Navbar";
 import StarEffect from "@/components/sub/StarEffect";
 import Footer from "@/components/main/Footer";
+import { openGraphImage } from "./shared-metadata";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Suneth Udayanga",
   description: "Your are visiting My Portfolio",
-  
+  openGraph: {
+    ...openGraphImage,
+    title: 'Suneth Udayanga',
+  },
 
+  
 };
 
 export default function RootLayout({
