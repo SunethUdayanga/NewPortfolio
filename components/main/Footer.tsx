@@ -9,6 +9,9 @@ const Footer = () => {
             <div className="mb-[20px] text-[15px] text-center">
                Designed & Developed by Suneth Udayanga &copy; All rights reserved
             </div>
+            <div className="mb-[20px] text-[15px] text-center">
+               V 2.4.87 
+            </div>
         </div>
     </div>
   )

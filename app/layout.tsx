@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Suneth Udayanga",
   description: "Your are visiting My Portfolio",
   
+
 };
 
 export default function RootLayout({
