@@ -23,12 +23,12 @@ const ProjectContent = () => {
                     >
                         <div className="card-content">
                             <div className='relative w-[300px] h-[200px]'>
-                                <Image src={card.imageUrl} className='rounded-sm shadow-sm shadow-blue-500/50 ring-1 ring-blue-800 ring-offset-2 ring-offset-slate-900' alt='' objectFit='cover' layout='fill' />
+                                <Image src={card.mpimageUrl} className='rounded-sm shadow-sm shadow-blue-500/50 ring-1 ring-blue-800 ring-offset-2 ring-offset-slate-900' alt='' objectFit='cover' layout='fill' />
                             </div>
                             <div className='flex flex-row justify-between h-full'>
                                 <div>
-                                    <motion.h2 className="text-xl font-bold my-3 text-gray-300">{card.title}</motion.h2>
-                                    <motion.h5 className="text-sm font-bold mb-1 text-gray-400">{card.subtitle}</motion.h5>
+                                    <motion.h2 className="text-xl font-bold my-3 text-gray-300">{card.mptitle}</motion.h2>
+                                    <motion.h5 className="text-sm font-bold mb-1 text-gray-400">{card.mpsubtitle}</motion.h5>
                                 </div>
                                 <div className='flex items-end'>
                                     <div className='bg-gray-700 px-2 mb-0 rounded-full'><h5 className='text font-bold text-gray-400'>{card.year}</h5></div>
@@ -66,10 +66,10 @@ const ProjectContent = () => {
                                             Close
                                         </motion.button>
                                         <div className='relative w-full h-[200px] md:h-[220px] mb-4'>
-                                            <Image src={card.imageUrl} className='rounded-md shadow-sm shadow-blue-500/50 ring-1 ring-blue-500 ring-offset-2 ring-offset-slate-900' alt='' objectFit='cover' layout='fill' />
+                                            <Image src={card.mpimageUrl} className='rounded-md shadow-sm shadow-blue-500/50 ring-1 ring-blue-500 ring-offset-2 ring-offset-slate-900' alt='' objectFit='cover' layout='fill' />
                                         </div>
-                                        <motion.h2 className="text-xl font-bold mb-2 text-gray-100">{card.title}</motion.h2>
-                                        <motion.h5 className="text-sm font-bold mb-1 text-gray-200">{card.subtitle}</motion.h5>
+                                        <motion.h2 className="text-xl font-bold mb-2 text-gray-100">{card.mptitle}</motion.h2>
+                                        <motion.h5 className="text-sm font-bold mb-1 text-gray-200">{card.mpsubtitle}</motion.h5>
                                         <motion.p className="text-md text-gray-300 mb-6">{card.description}</motion.p>
                                         {/* <motion.p
                                             className="text-md text-gray-400"
