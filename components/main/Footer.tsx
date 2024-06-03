@@ -10,7 +10,7 @@ const Footer = () => {
                Designed & Developed by Suneth Udayanga &copy; All rights reserved
             </div>
             <div className="mb-[20px] text-[15px] text-center">
-               V 2.4.87 
+               V 2.4.91 
             </div>
         </div>
     </div>
