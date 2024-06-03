@@ -11,14 +11,10 @@ export const metadata: Metadata = {
   title: "Suneth Udayanga",
   description: "Your are visiting My Portfolio",
   openGraph: {
-    ...openGraphImage,
     title: 'Suneth Udayanga',
-    images:['/meta.png']
-    
-  
+    images:['/meta.png'],
   },
 
-  
 };
 
 export default function RootLayout({
@@ -28,6 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <meta name="image" property="og:image" content={'/public/meta.png'}/>
+      </head>
       <body className={'${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden'}>
       <Navbar />
       <StarEffect />
