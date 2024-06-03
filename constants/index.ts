@@ -224,17 +224,17 @@ export const Skill_data = [
       demo:'',
       description: 'This Android app, offering seamless access to all our services. The app features an in-app update delivery system, ensuring you always have the latest resources and improvements at your fingertips',
     },
-    {
-      id: '7',
-      imageUrl:'/assets/project/ruslnotesweb.png',
-      width:300,
-      height:200,
-      title: 'RUSL Notes Website',
-      subtitle: 'Website with Google Services',
-      year:2020,
-      demo:'',
-      description: 'This site provide a wide range of lecture notes & videos, pastpapers, and free software tools to support your learning journey. This site completely based on Google Free Services',
-    },
+    // {
+    //   id: '7',
+    //   imageUrl:'/assets/project/ruslnotesweb.png',
+    //   width:300,
+    //   height:200,
+    //   title: 'RUSL Notes Website',
+    //   subtitle: 'Website with Google Services',
+    //   year:2020,
+    //   demo:'',
+    //   description: 'This site provide a wide range of lecture notes & videos, pastpapers, and free software tools to support your learning journey. This site completely based on Google Free Services',
+    // },
   ];
 
   export const Contact_icons = [
