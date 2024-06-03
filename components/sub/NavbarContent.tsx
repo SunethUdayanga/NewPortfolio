@@ -5,7 +5,12 @@ import { useState } from "react";
 import { slideInFromLeft, slideInFromTop } from '@/utils/motion';
 import Link from 'next/link';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import { Exo_2 } from 'next/font/google';
 
+const exo = Exo_2({
+    subsets: ['latin'],
+    weight: ['400', '700'],
+  })
 
 const variants = {
     open: { opacity: 1, x: 0 },
@@ -50,9 +55,10 @@ const NavbarContent = () => {
         >
             <motion.div
                 variants={slideInFromTop}
-                className="Navbar sticky mx-2 my-4 px-8 py-2 bg-gray-800 rounded-3xl ring-1 ring-blue-500 ring-offset-2 ring-offset-slate-900"
+                className="Navbar sticky mx-2 my-4 px-8 py-2 bg-gray-800 bg-opacity-80 rounded-3xl ring-1 ring-blue-500 ring-offset-2 ring-offset-slate-900"
             >
-                <nav className='bg-gray-800'>
+                <div className={exo.className}>
+                <nav className=''>
                     <div className='flex flex-row justify-between'>
                         <div className='logo-side items-center'>
                             <Link rel="stylesheet" href="/" ><span className="Welcome-text text-2xl font-bold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
@@ -62,7 +68,7 @@ const NavbarContent = () => {
                         {/* <div className='link-side hidden md:flex items-center'> */}
                         <div className={getMenuClasses()}>
                             <Link href='#about' className='text-lg text-gray-400 mx-4 hover:text-gray-200'>About</Link>
-                            <Link href='#projects' className='text-lg text-gray-400 mx-4 hover:text-gray-200'>My Projects</Link>
+                            <Link href='#projects' className='text-lg text-gray-400 mx-4 hover:text-gray-200'>Projects</Link>
                             <Link href='#skills' className='text-lg text-gray-400 mx-4 hover:text-gray-200'>Skills</Link>
                             <Link href='#contact' className='text-lg text-gray-400 mx-4 hover:text-gray-200'>Contact</Link>
 
@@ -86,6 +92,7 @@ const NavbarContent = () => {
                     </div>
 
                 </nav>
+                </div>
 
             </motion.div>
         </motion.div>

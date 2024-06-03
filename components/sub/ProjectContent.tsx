@@ -13,7 +13,7 @@ const ProjectContent = () => {
             <div className="flex flex-wrap justify-center gap-4">
                 {projects.map((card, index) => (
                     <motion.div
-                        className={`bg-gray-800 rounded-lg p-4 flex items-center cursor-pointer transform transition-transform duration-500 hover:scale-105 ${selectedId === card.id ? 'card-selected' : ''}`}
+                        className={`bg-gray-800 bg-opacity-80 rounded-lg p-4 flex items-center cursor-pointer transform transition-transform duration-500 hover:scale-105 ${selectedId === card.id ? 'card-selected' : ''}`}
                         layoutId={`card-container-${card.id}`}
                         onClick={() => setSelectedId(card.id)}
                         key={card.id}
@@ -27,8 +27,8 @@ const ProjectContent = () => {
                             </div>
                             <div className='flex flex-row justify-between h-full'>
                                 <div>
-                                    <motion.h2 className="text-xl font-bold my-3 text-gray-400">{card.title}</motion.h2>
-                                    <motion.h5 className="text-sm font-bold mb-1 text-gray-500">{card.subtitle}</motion.h5>
+                                    <motion.h2 className="text-xl font-bold my-3 text-gray-300">{card.title}</motion.h2>
+                                    <motion.h5 className="text-sm font-bold mb-1 text-gray-400">{card.subtitle}</motion.h5>
                                 </div>
                                 <div className='flex items-end'>
                                     <div className='bg-gray-700 px-2 mb-0 rounded-full'><h5 className='text font-bold text-gray-400'>{card.year}</h5></div>
@@ -42,7 +42,7 @@ const ProjectContent = () => {
             <AnimatePresence>
                 {selectedId && (
                     <motion.div
-                        className="fixed inset-2 rounded-2xl bg-gray-500 bg-opacity-80 flex items-center justify-center p-4 pt-[60px]"
+                        className="fixed inset-2 rounded-2xl bg-gray-900 bg-opacity-70 flex items-center justify-center p-4 pt-[60px]"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.4 }}
@@ -60,7 +60,7 @@ const ProjectContent = () => {
                                 >
                                     <motion.div className="relative">
                                         <motion.button
-                                            className="absolute right-2 bottom-2 py-1 px-2 text-center text-white bg-red-500 rounded-full"
+                                            className="absolute right-2 bottom-0 px-2 text-center text-white bg-red-500 rounded-full"
                                             onClick={() => setSelectedId('')}
                                         >
                                             Close
@@ -68,17 +68,17 @@ const ProjectContent = () => {
                                         <div className='relative w-full h-[200px] md:h-[220px] mb-4'>
                                             <Image src={card.imageUrl} className='rounded-md shadow-sm shadow-blue-500/50 ring-1 ring-blue-500 ring-offset-2 ring-offset-slate-900' alt='' objectFit='cover' layout='fill' />
                                         </div>
-                                        <motion.h2 className="text-xl font-bold mb-2 text-gray-300">{card.title}</motion.h2>
-                                        <motion.h5 className="text-sm font-bold mb-1 text-gray-400">{card.subtitle}</motion.h5>
-                                        <motion.p className="text-md text-gray-500 mb-4">{card.description}</motion.p>
-                                        <motion.p
-                                            className="text-md text-gray-600"
+                                        <motion.h2 className="text-xl font-bold mb-2 text-gray-100">{card.title}</motion.h2>
+                                        <motion.h5 className="text-sm font-bold mb-1 text-gray-200">{card.subtitle}</motion.h5>
+                                        <motion.p className="text-md text-gray-300 mb-6">{card.description}</motion.p>
+                                        {/* <motion.p
+                                            className="text-md text-gray-400"
                                             initial={{ opacity: 0 }}
                                             animate={{ opacity: 1 }}
                                             exit={{ opacity: 0 }}
                                         >
                                             Additional content can go here!
-                                        </motion.p>
+                                        </motion.p> */}
                                     </motion.div>
                                 </motion.div>
                             )

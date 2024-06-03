@@ -14,59 +14,64 @@ const AboutContent = () => {
             transition={{ duration: 0.5 }}
             className="mt-2">
             <dl className="">
-            <motion.div
+                <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.5 }} className="bg-gray-200 bg-opacity-5 m-2 ring-1 rounded-xl p-6 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt className="text-sm font-medium leading-6 text-gray-200">Full name</dt>
-                    <dd className="mt-1 text-sm leading-6 text-gray-200 sm:col-span-2 sm:mt-0">- Suneth Udayanga Wijewickrama</dd>
+                    <dt className="text-lg font-medium leading-6 text-gray-200">Full name</dt>
+                    <dd className="m-1 text-md leading-6 text-gray-200 sm:col-span-2 sm:mt-0">Suneth Udayanga Wijewickrama</dd>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 1 }} className="bg-gray-200 bg-opacity-5 m-2 ring-1 rounded-xl p-6 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt className="text-sm font-medium leading-6 text-gray-200">Age</dt>
-                    <dd className="mt-1 text-sm leading-6 text-gray-200 sm:col-span-2 sm:mt-0">- 27 years old</dd>
+                    <dt className="text-lg font-medium leading-6 text-gray-200">Age</dt>
+                    <dd className="m-1 text-md leading-6 text-gray-200 sm:col-span-2 sm:mt-0">27 years old</dd>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 1.5 }} className="bg-gray-200 bg-opacity-5 m-2 ring-1 rounded-xl p-6 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt className="text-sm font-medium leading-6 text-gray-200">Early Interest</dt>
-                    <dl className="mt-1 text-sm leading-6 text-gray-200 sm:col-span-2 sm:mt-0">
-                        <dd>- Developed a passion for computers from a young age.</dd>
-                        <dd>- Explored various aspects of computing and conducted educational experiments.</dd>
+                    <dt className="text-lg font-medium leading-6 text-gray-200">Early Interest</dt>
+                    <dl className="mt-1 text-md leading-6 text-gray-200 sm:col-span-2 sm:mt-0 divide-y divide-blue-700">
+                        <dd className='m-1'>Developed a passion for computers from a young age.</dd>
+                        <dd className='m-1'>Explored various aspects of computing and conducted educational experiments.</dd>
                     </dl>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 2 }} className="bg-gray-200 bg-opacity-5 m-2 ring-1 rounded-xl p-6 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt className="text-sm font-medium leading-6 text-gray-200">Education</dt>
-                    <dl className="mt-1 text-sm leading-6 text-gray-200 sm:col-span-2 sm:mt-0">
-                        <dd>- Completed Advanced Level examinations in Kegalu Vidyalaya, Kegalle.</dd>
-                        <dd>- Attended the Department of Technical Education & Training Warakapola and Completed ICT Technician NVQ Level 4. </dd>
-                        <dd>- Undergraduate Bachelor of Information and Communication Technology in Rajarata University of Sri Lanka, Mihintale.</dd>
+
+                    <dt className="text-lg font-medium leading-6 text-gray-200">Education</dt>
+                    <dl className="mt-1 text-md leading-6 text-gray-200 sm:col-span-2 sm:mt-0 divide-y divide-blue-700">
+                        <dd className='m-1'>Completed Advanced Level examinations in Kegalu Vidyalaya, Kegalle.</dd>
+                        <dd className='m-1'>Attended the Department of Technical Education & Training Warakapola and Completed ICT Technician NVQ Level 4. </dd>
+                        <dd className='m-1'>Undergraduate Bachelor of Information and Communication Technology in Rajarata University of Sri Lanka, Mihintale.</dd>
                     </dl>
+
                 </motion.div>
 
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 2.5 }} className="bg-gray-200 bg-opacity-5 m-2 ring-1 rounded-xl p-6 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt className="text-sm font-medium leading-6 text-gray-200">Professional Interests</dt>
-                    <dl className="mt-1 text-sm leading-6 text-gray-200 sm:col-span-2 sm:mt-0">
-                        <dd>- Keen interest in exploring new technologies and innovations in the field of Information and Communication Technology.</dd>
-                        <dd>- Passionate about continuous learning and professional development.</dd>
+                    <dt className="text-lg font-medium leading-6 text-gray-200">Professional Interests</dt>
+                    <dl className="mt-1 text-md leading-6 text-gray-200 sm:col-span-2 sm:mt-0 divide-y divide-blue-700">
+                        <dd className='m-1'>Keen interest in exploring new technologies and innovations in the field of Information and Communication Technology.</dd>
+                        <dd className='m-1'>Passionate about continuous learning and professional development.</dd>
                     </dl>
                 </motion.div>
-
+                
             </dl>
         </motion.div>
 
     );
 
 }
+
+
+
 
 
 
