@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <meta name="image" property="og:image" content={'/public/meta.png'}/>
+      <meta name="image" property="og:image" content={'/meta.png'}/>
       </head>
       <body className={'${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden'}>
       <Navbar />
